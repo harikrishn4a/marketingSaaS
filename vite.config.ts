@@ -16,5 +16,11 @@ export default defineConfig({
   },
   build: {
     sourcemap: true,
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name].[ext]'
+      }
+    }
   },
 });
